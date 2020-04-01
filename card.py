@@ -28,6 +28,10 @@ class Card(object):
             return self.__suit
 
     def get_color(self):
+        if self.__suit in ['d', 'h']:
+            self.__color = 'red'
+        else:
+            self.__color = 'black'
         return self.__color
 
     def get_hardValue(self):
